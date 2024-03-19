@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFFFFF; 
+  }
+
+nav {
+    background-color: #000080; 
+    text-align: center;
+  }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+nav ul li {
+    display: inline-block; 
+  }
+  
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #FFFFFF; 
+  }
+  
+nav ul li a:hover {
+    background-color: #0202B4; 
+  }
+  
+.content {
+    padding: 20px;
+    color: #000000; 
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centrar verticalmente */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li:first-child {
+    margin-right: auto; 
+}
+
+nav ul li img {
+    max-width: 27px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática */
+}
+
+nav ul li:first-child img {
+    margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+nav ul li:last-child {
+    margin-right: 612px; /* Ajusta el margen derecho según sea necesario */
+}
+
+nav ul li span {
+    font-family: 'Times New Roman', Times, serif; /* Establece la fuente */
+    color: #ffffff; /* Color de texto blanco */
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 23px;
+    vertical-align: -3.5px;
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: 600px; 
+  margin: auto; 
+  display: block; 
+}
+
+#carouselExampleInterval {
+  max-width: 100%; /* Establece un ancho máximo para el carrusel */
+  margin: 50px auto; /* Margen automático arriba y abajo, y centrado horizontalmente */
+}
+
+.carousel-item {
+  transition: transform 0.6s ease; 
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  transform: translateX(-100%); 
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding-right: 90px;
+}
+
+.content img {
+  max-width: 50%; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  margin: auto;
+}
+
+.content p {
+  font-size: 21px; /* Cambia el tamaño de la fuente */
+  font-family: 'Times New Roman', Times, serif; /* Cambia la tipografía de la fuente */
+  text-align: justify;
+}
+
+.container {
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  width: 70%; /* Ancho del contenedor */
+  padding-left: 70px;
+}
+
+figure {
+  float: left;
+  text-align: center;
+}
+
+figure img {
+  width: 150px;
+  transition: 3s;
+}
+
+#uno:hover {
+  transform: scale(1.9);
+}
+
+#dos:hover {
+  transform: skew(50deg);
+}
+
+#tres:hover {
+  transform: rotate(180deg);
+}
+
+figure {
+  text-align: center;
+  margin: 0 20px;
+}
+
+figure img {
+  width: 300px; /* Tamaño fijo para las imágenes */
+  height: 300px; /* Tamaño fijo para las imágenes */
+  border-radius: 50%; /* Hace que las imágenes tengan forma de círculo */
+  margin-bottom: 10px; /* Espacio entre la imagen y su leyenda */
+}
+
+figure figcaption {
+  font-size: 18px; /* Cambia el tamaño de la fuente */
+  font-family: Arial, sans-serif; /* Cambia la tipografía de la fuente */
+}
+
+footer {
+  background-color: #000080;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact, .social {
+  flex-basis: 48%;
+}
+
+.contact p {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #cccccc;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  .contact, .social {
+      flex-basis: auto;
+  }
+}
